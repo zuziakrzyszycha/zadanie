@@ -3,10 +3,9 @@ zadanie z prezentacji na programowanie
 import random
 lista3=[]
 alfabet="abcdefghijklmnoprstuwyz"
-def dlugosc(lista):
-    suma=0
-    for znak in lista:
-        suma+=1
+def dlugosc(lista, suma=0):
+    if len(lista) >0:
+        return dlugosc(lista[1:],suma+1)
     return suma
 
 print("Witaj w programie do mierzenia list! Poproszę Cię, abyś wpisał dowolne słowo, zdanie.")
